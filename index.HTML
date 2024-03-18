@@ -3,12 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Apology Page</title>
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Linking the CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #apology-text {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        #hamster-image {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .green-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .red-button {
+            background-color: #f44336;
+            color: white;
+        }
+        .red-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <div id="apology-text">I'm sorry BBG (aya), can you forgive me?</div>
-    <img id="hamster-image" src="full.png" alt="Cute Hamster"> <!-- Correcting the image src -->
+    <img id="hamster-image" src="full.png" alt="Cute Hamster">
     <button class="button green-button" onclick="showHeart()">YES</button>
     <button class="button red-button" onclick="confirmRed()">NO</button>
 
