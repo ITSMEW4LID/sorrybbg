@@ -5,40 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Apology Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        #apology-text {
-            font-size: 24px;
-            margin-top: 20px;
-        }
-        #hamster-image {
-            max-width: 100%;
-            margin-top: 20px;
-        }
-        .button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-        .green-button {
-            background-color: #4CAF50;
-            color: white;
-        }
-        .red-button {
-            background-color: #f44336;
-            color: white;
-        }
-        .red-button:hover {
-            transform: scale(1.1);
-        }
-    </style>
 </head>
 <body>
     <div id="apology-text">I'm sorry BBG (aya), can you forgive me?</div>
@@ -46,20 +12,8 @@
     <button class="button green-button" onclick="showHeart()">YES</button>
     <button class="button red-button" onclick="confirmRed()">NO</button>
 
-    <script>
-        function showHeart() {
-            alert("LETS GOOOOOOOOO (i love you)❤️");
-        }
+    <audio id="audio" src="Champagne_poetry_but_without_Drake_(Audio).mp3"></audio> <!-- Audio element -->
 
-        function confirmRed() {
-            var apologyText = document.getElementById("apology-text");
-            apologyText.innerText = "ARE YOU SURE?";
-            var response = confirm("Are you sure?");
-            if (!response) {
-                // Keep showing the "ARE YOU SURE?" message
-                confirmRed();
-            }
-        }
-    </script>
+    <script src="script.js"></script> <!-- Linking the JavaScript file -->
 </body>
 </html>
